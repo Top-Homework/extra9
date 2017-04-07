@@ -12,7 +12,7 @@ Simple C++ program illustrating hashing functions
     * Less collision
 * __How to Handle Collisions__
     * Different ways to avoid collisions but the three common collision resolution strategies are linear probing, quadratic probing, and double hashing
-        1. Separate Chaining (Open Hashing)
+        1. Separate Chaining
             * The idea is to keep a list of all elements that hash to the same value
                 * The array elements are pointers to the first nodes of the lists
                 * A new item is inserted to the front of the list (push_front)
@@ -46,4 +46,5 @@ Simple C++ program illustrating hashing functions
         3. Quadratic Probing (Closed Hashing)
             * If collisions occurs, alternate cells are tried until h<sub>i</sub>(x) = (hash(x) + f(i)) mod HSize, with f(0) = 0
             * i.e. f is a quadtratic function of i, typically f(i) = i<sup>2</sup>
+            * Stopped at 6:00 in Hashing - Quadratic Probing for Collision Resolution
             
